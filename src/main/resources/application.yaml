@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: ${POSTGRESQL_URL:jdbc:postgresql://localhost:5432/test_postgres_db}
+    username: ${POSTGRESQL_USER:postgres}
+    password: ${POSTGRESQL_PASSWORD:pwd123}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        default_schema: gdsmanagement
